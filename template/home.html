@@ -1,0 +1,11 @@
+<div ng-app ng-controller="pictureListController">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-4 col-xs-12" align="center" ng-repeat="photo in photos">
+				<a href="/#!/image/{{photo.id}}" ><img ng-src="{{photo.thumbnailUrl}}" alt="Photo # {{photo.id}}"/></a><br>
+				<a href="/#!/image/{{photo.id}}">Photo # {{photo.id}}</a>
+				<a href="/#!/album/{{photo.albumId}}/photos">Album № {{photo.albumId}}</a>
+			</div>
+		</div>
+	</div>
+</div>

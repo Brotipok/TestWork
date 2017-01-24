@@ -1,0 +1,11 @@
+<div align="center">
+	<h3>Album №{{albumId}}</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-xs-12 col-sm-4" align="center" ng-repeat="photo in album">
+				<a href="/#!/image/{{photo.id}}"><img ng-src="{{photo.thumbnailUrl}}" alt="Photo # {{photo.id}}"/></a><br>
+				<a href="/#!/image/{{photo.id}}">Photo # {{photo.id}}</a>
+			</div>
+		</div>
+	</div>
+</div>
